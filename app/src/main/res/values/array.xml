@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="num">
+        <item>กรูณาเลือกจำนวนคน</item>
+        <item>1 ท่าน</item>
+        <item>2 ท่าน</item>
+        <item>3 ท่าน</item>
+        <item>4 ท่าน</item>
+        <item>มากกว่าที่กำหนดไว้</item>
+    </string-array>
+</resources>

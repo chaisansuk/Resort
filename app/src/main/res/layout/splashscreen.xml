@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecio_bg1"
+    tools:context=".main_splash.SplashScreen">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="348dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@drawable/sw_512"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.442"-->
+        <!--tools:layout_constraintBottom_creator="1"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:ignore="Orientation">-->
+
+    <!--</LinearLayout>-->
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="409dp"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="101dp"
+        android:layout_height="14dp"
+        android:layout_above="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text="TextView"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar" />
+</android.support.constraint.ConstraintLayout>

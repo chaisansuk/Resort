@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecio_login2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/txtUsername"
+
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.55"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/hint_pin"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="admin"
+        android:textAlignment="center"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textColorHint="@color/input_login_hint"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="371dp"
+        tools:layout_conversion_absoluteX="20dp"
+        tools:layout_conversion_absoluteY="190dp">
+
+        <requestFocus
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_conversion_absoluteX="20dp"
+            tools:layout_conversion_absoluteY="190dp" />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="340dp"
+        android:alpha="0.55"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/hint_pin2"
+        android:padding="10dp"
+        android:password="true"
+        android:singleLine="true"
+        android:text="1234"
+        android:textAlignment="center"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textColorHint="@color/input_login_hint"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="371dp"
+        tools:layout_conversion_absoluteX="20dp"
+        tools:layout_conversion_absoluteY="245dp">
+
+        <requestFocus
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_conversion_absoluteX="20dp"
+            tools:layout_conversion_absoluteY="245dp" />
+    </EditText>
+
+    <!-- Login Button -->
+
+    <!-- Link to Login Screen -->
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="287dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_login"
+        android:textColor="@color/btn_login"
+        android:onClick="checkLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+
+</android.support.constraint.ConstraintLayout>
