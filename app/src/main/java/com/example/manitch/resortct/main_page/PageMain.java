@@ -90,7 +90,6 @@ public class PageMain extends AppCompatActivity {
 
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
-        this.person_spinner();
 
     }
 
@@ -174,21 +173,6 @@ public class PageMain extends AppCompatActivity {
 
     }
 
-    public void person_spinner(){
-        Spinner spinner = (Spinner) this.findViewById(R.id.editText2);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ArrayAdapter<String> adapter = (ArrayAdapter<String>) parent.getAdapter();
-                String display = "You Select: " + adapter.getItem(position).toString();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                String display = "You Select: ";
-            }
-        });
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
