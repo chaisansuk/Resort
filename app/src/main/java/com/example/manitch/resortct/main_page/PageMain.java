@@ -50,9 +50,9 @@ public class PageMain extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     // Refresh menu item
     private MenuItem refreshMenuItem;
-    private CalendarPickerView calendar;
-    Calendar c = Calendar.getInstance();
-    int cday, cmonth, cyear;
+//    private CalendarPickerView calendar;
+//    Calendar c = Calendar.getInstance();
+//    int cday, cmonth, cyear;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -184,12 +184,12 @@ public class PageMain extends AppCompatActivity {
                 // load the data from server
                 new SyncData().execute();
                 return true;
-            case R.id.action_next:
-                ArrayList<Date> selectedDates = (ArrayList<Date>)calendar
-                        .getSelectedDates();
-                Toast.makeText(PageMain.this, selectedDates.toString(),
-                        Toast.LENGTH_LONG).show();
-                return true;
+//            case R.id.action_next:
+//                ArrayList<Date> selectedDates = (ArrayList<Date>)calendar
+//                        .getSelectedDates();
+//                Toast.makeText(PageMain.this, selectedDates.toString(),
+//                        Toast.LENGTH_LONG).show();
+//                return true;
             case R.id.action_logout:
                 AlertDialog.Builder dialog = new AlertDialog.Builder(this);
                 dialog.setTitle("Logout");
